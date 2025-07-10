@@ -1,0 +1,29 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f7fbff;
+}
+.profile-slider {
+  transition: transform 0.5s ease-in-out;
+}
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.project-card:hover .project-image {
+  transform: scale(1.05);
+}
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 32px;
+  height: calc(100% - 32px);
+  width: 2px;
+  background-color: #e2e8f0;
+}
+.active-section {
+  color: #3b82f6;
+  font-weight: 600;
+}
